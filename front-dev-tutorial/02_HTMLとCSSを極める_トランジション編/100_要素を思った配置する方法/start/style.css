@@ -7,17 +7,23 @@
 
 .child {
   background-color: orange;
-  width: 100px;
-  height: 100px;
   font-weight: 600;
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+.child.v1 {
+  flex-shrink: 0;
 }
 
 .child.v2 {
   background-color: palevioletred;
+  flex-grow: 2;
 }
 
 .child.v3 {
   background-color: rebeccapurple;
+  flex-grow: 3;
 }
 
 /**
@@ -27,4 +33,9 @@
 /* ブロック要素を中央揃え */
 /**
  * 上下方向のレイアウト
- *//*# sourceMappingURL=style.css.map */
+ */
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}/*# sourceMappingURL=style.css.map */

@@ -12,12 +12,16 @@
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn.slide-bg {
+.btn.cover-3d {
   position: relative;
-  overflow: hidden;
-  z-index: 1;
+  transform-style: preserve-3d;
+  perspective: 300px;
 }
-.btn.slide-bg::before {
+.btn.cover-3d span {
+  display: inline-block;
+  transform: translateZ(20px);
+}
+.btn.cover-3d::before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -26,13 +30,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-100%);
-  transition: transform 0.3s;
+  transform: rotateX(90deg);
+  transition: all 0.1s;
+  transform-origin: top center;
   z-index: -1;
+  opacity: 0;
 }
-.btn.slide-bg:hover {
+.btn.cover-3d:hover {
   color: white;
 }
-.btn.slide-bg:hover::before {
+.btn.cover-3d:hover::before {
   transform: none;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

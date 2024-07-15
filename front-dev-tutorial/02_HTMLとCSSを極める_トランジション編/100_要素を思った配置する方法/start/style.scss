@@ -6,15 +6,25 @@
 
 .child {
   background-color: orange;
-  width: 100px;
-  height: 100px;
+  // width: 100px;
+  // height: 100px;
   font-weight: 600;
+  flex-grow: 1;
+  flex-basis: 300px;
+
+}
+.child.v1 {
+  flex-shrink: 0;
 }
 .child.v2 {
+  // width: 200px;
+  // height: 200px;
   background-color: palevioletred;
+  flex-grow: 2;
 }
 .child.v3 {
   background-color: rebeccapurple;
+  flex-grow: 3;
 }
 
 /**
@@ -22,7 +32,9 @@
  */
 /* インライン要素に対して */
 // .parent {
-//   text-align: left;
+//   text-align: right;
+//   //文字間隔を調整するプロパティ。-だと文字間隔がなくなる。
+//   letter-spacing: -6px;
 // }
 // .child {
 //     display: inline-block;
@@ -32,12 +44,14 @@
 // .parent {
 // }
 // .child {
-//     margin: 0 auto;
+//   width: 100px;
+//   margin: 0 auto;
 // }
 
 /**
  * 上下方向のレイアウト
  */
+ //要素の上に中央揃えしたい場合はabsoluteで要素を指定する。
 // .parent {
 //   position: relative;
 // }
@@ -48,9 +62,14 @@
 //   transform: translate(-50%, -50%);
 // }
 
-// .parent {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-end;
-// }
+.parent {
+  display: flex;
+  justify-content: center;
+  // flex-wrap: wrap;
+  //要素の指定が逆になってchild1が一番右側に移動
+  flex-direction: row-reverse;
+  ////columを入れると上下に揃えられる
+  /// rowだとデフォルトの横配列になる
+  // flex-direction: row;
+  // align-items: flex-end;
+}
