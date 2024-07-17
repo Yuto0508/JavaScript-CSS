@@ -3,7 +3,6 @@
 @use "child" as c;
 
 h1 {
-    background: c.$cOrange;
-    font-size: math.div(30px, 2);
+  background: c.$cOrange;
+  font-size: math.div(30px, 2);
 }
-

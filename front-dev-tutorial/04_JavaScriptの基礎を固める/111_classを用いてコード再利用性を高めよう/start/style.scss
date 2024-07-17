@@ -1,7 +1,7 @@
 @use "mixin" as *;
 
 html {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 body {
@@ -30,7 +30,12 @@ body {
     & .char {
       display: inline-block;
 
-      @include animation($name: kf-animate-chars, $duration: 0.5s, $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1), $fill-mode: both);
+      @include animation(
+        $name: kf-animate-chars,
+        $duration: 0.5s,
+        $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),
+        $fill-mode: both
+      );
 
       @for $i from 1 through 9 {
         &:nth-child(#{$i}) {

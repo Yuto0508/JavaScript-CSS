@@ -51,7 +51,9 @@ $cWhite: white;
     font-size: 25px;
     z-index: 2;
     opacity: 0;
-    transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
+    transition:
+      opacity 0.3s ease 1s,
+      transform 0.3s ease 1s;
   }
 
   &__footer {

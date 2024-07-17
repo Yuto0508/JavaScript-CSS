@@ -64,7 +64,8 @@
   animation-delay: -1s;
 }
 @keyframes sk-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0);
   }
   50% {
@@ -107,10 +108,12 @@
   animation-delay: -0.8s;
 }
 @keyframes sk-stretchdelay {
-  0%, 40%, 100% {
+  0%,
+  40%,
+  100% {
     transform: scaleY(0.4);
   }
   20% {
     transform: scaleY(1);
   }
-}/*# sourceMappingURL=answer.css.map */
+} /*# sourceMappingURL=answer.css.map */

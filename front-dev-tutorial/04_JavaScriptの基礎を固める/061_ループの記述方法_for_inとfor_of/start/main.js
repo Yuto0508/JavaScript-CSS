@@ -9,7 +9,7 @@ const arry = [1, 2, 3, 4, 5, 6];
 
 //for ofではiに格納されているのが添え字ではなく値が格納されていることがわかる
 //for inだと添え字が渡るが、ofとした場合には値が渡ってくる。inは数字が渡る、ofは値が渡る
- for (let i in arry) {
-    let v =arry[i];
-    console.log(v);
- }
+for (let i in arry) {
+  let v = arry[i];
+  console.log(v);
+}

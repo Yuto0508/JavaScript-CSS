@@ -11,7 +11,6 @@
   font-weight: 600;
   flex-grow: 1;
   flex-basis: 300px;
-
 }
 .child.v1 {
   flex-shrink: 0;
@@ -51,7 +50,7 @@
 /**
  * 上下方向のレイアウト
  */
- //要素の上に中央揃えしたい場合はabsoluteで要素を指定する。
+//要素の上に中央揃えしたい場合はabsoluteで要素を指定する。
 // .parent {
 //   position: relative;
 // }

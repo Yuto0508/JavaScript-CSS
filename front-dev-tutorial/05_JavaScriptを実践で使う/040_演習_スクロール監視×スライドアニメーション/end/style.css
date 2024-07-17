@@ -48,10 +48,12 @@ img {
     transform: scaleX(0);
   }
 }
-.img-zoom, .bg-img-zoom {
+.img-zoom,
+.bg-img-zoom {
   opacity: 0;
 }
-.inview .img-zoom, .inview .bg-img-zoom {
+.inview .img-zoom,
+.inview .bg-img-zoom {
   opacity: 1;
   transition: transform 0.3s ease;
   animation-name: kf-img-show;
@@ -62,7 +64,8 @@ img {
   animation-direction: normal;
   animation-fill-mode: none;
 }
-.inview .img-zoom:hover, .inview .bg-img-zoom:hover {
+.inview .img-zoom:hover,
+.inview .bg-img-zoom:hover {
   transform: scale(1.05);
 }
 
@@ -118,4 +121,4 @@ img {
   display: block;
   content: "";
   padding-top: 50%;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

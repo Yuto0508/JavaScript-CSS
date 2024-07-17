@@ -4,11 +4,10 @@
 // }
 
 //アロー関数。無名関数のfunctionから＝＞に変えるだけで定義づけできる。{}波括弧も省力可能
-const hello = (name = "Tom") => 
-    console.log("hello" + name);
- 
+const hello = (name = "Tom") => console.log("hello" + name);
+
 //最終的に引数の()を省略できる
-// const hello = name => 
+// const hello = name =>
 //     console.log("hello" + name + age);
 
 //アロー関数(省略)
@@ -23,15 +22,12 @@ const hello = (name = "Tom") =>
 // console.log(hello());
 
 //上記記述の簡略ver.
-const hello = (name, age) =>40;
-const arry = [1,2,3,4,5,6];
-arry.forEach(value => console.log(value));
-
+const hello = (name, age) => 40;
+const arry = [1, 2, 3, 4, 5, 6];
+arry.forEach((value) => console.log(value));
 
 // hello("Code Mafia", 10);
 // hello("Code Mafia 2", 20);
-
-
 
 // hello("Code Mafia");
 // hello("Code Mafia 2");

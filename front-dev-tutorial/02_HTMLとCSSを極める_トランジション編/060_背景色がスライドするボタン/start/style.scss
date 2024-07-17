@@ -15,11 +15,11 @@ $cBlack: black;
   cursor: pointer;
   transition: all 0.3s;
 
-  &.slide-bg{
+  &.slide-bg {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    
+
     & span {
       display: inline-block;
       width: 100%;
@@ -35,8 +35,8 @@ $cBlack: black;
 
     &:hover {
       color: $cWhite;
-      
-      & span{
+
+      & span {
         transform: none;
       }
     }

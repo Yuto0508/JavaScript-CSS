@@ -6,7 +6,7 @@
 // //lastnameがnameという引数になる
 // //hello CodeMafiaとコンソールにて表示
 // function hello (callback, lastname)  {
-//     console.log ("hello " + callback(lastname)); 
+//     console.log ("hello " + callback(lastname));
 // }
 
 // function getName() {
@@ -19,7 +19,7 @@
 // //nameに()関数を書くとhello Code Mafiaとなる
 // //getNameが引数のnameに渡される。name⇒getNameに変わる
 // // function hello (name)  {
-// //     console.log ("hello " + name() ); 
+// //     console.log ("hello " + name() );
 // // }
 // //getName関数が実行される、getName()がCode Mafiaと返される
 // function getName() {
@@ -37,7 +37,7 @@
 // //callback関数にCode Mafiaの文字列の引数が渡される
 
 // // function hello (callback)  {
-// //     console.log ("hello " + callback()); 
+// //     console.log ("hello " + callback());
 // // }
 
 // function getName() {
@@ -58,7 +58,6 @@
 
 // hello(getFirstName, "Mafia");
 
-
 // //無名関数の利用する場合の記法
 // hello(function() {
 //     return "Code";
@@ -74,17 +73,17 @@
 //     return "Code" + name;
 // },"Mafia");
 
-function dosomething(a,b,callback) {
-    const result = callback(a,b);
-    console.log(result)
+function dosomething(a, b, callback) {
+  const result = callback(a, b);
+  console.log(result);
 }
 //callback関数で掛け算の場合
-function multiply(a,b) {
-    return a * b;
+function multiply(a, b) {
+  return a * b;
 }
-dosomething(2,2,multiply);
+dosomething(2, 2, multiply);
 //callback関数で足し算の場合
-function plus(a,b) {
-    return a + b;
+function plus(a, b) {
+  return a + b;
 }
-dosomething(2,3,plus);
+dosomething(2, 3, plus);

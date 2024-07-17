@@ -217,7 +217,7 @@
   height: 100%;
   max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: scale(1.3);
   transition: transform 1.9s ease;
 }
@@ -251,7 +251,9 @@
   font-size: 25px;
   z-index: 2;
   opacity: 0;
-  transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
+  transition:
+    opacity 0.3s ease 1s,
+    transform 0.3s ease 1s;
 }
 .hero__footer {
   position: absolute;
@@ -286,7 +288,9 @@
 }
 
 @keyframes kf-arrow-anime {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     transform: translateY(-10%);
   }
   30% {
@@ -464,10 +468,12 @@
     transform: scaleX(0);
   }
 }
-.img-zoom, .bg-img-zoom {
+.img-zoom,
+.bg-img-zoom {
   opacity: 0;
 }
-.inview .img-zoom, .inview .bg-img-zoom {
+.inview .img-zoom,
+.inview .bg-img-zoom {
   opacity: 1;
   transition: transform 0.3s ease;
   animation-name: kf-img-show;
@@ -478,7 +484,8 @@
   animation-direction: normal;
   animation-fill-mode: none;
 }
-.inview .img-zoom:hover, .inview .bg-img-zoom:hover {
+.inview .img-zoom:hover,
+.inview .bg-img-zoom:hover {
   transform: scale(1.05);
 }
 
@@ -591,7 +598,9 @@
   display: block;
   transform: translate3d(0, 0, -1000px);
   padding: 0 40px;
-  transition: transform 0.3s, opacity 0.2s;
+  transition:
+    transform 0.3s,
+    opacity 0.2s;
   opacity: 0;
 }
 .mobile-menu__link {
@@ -653,44 +662,75 @@ img {
   vertical-align: bottom;
 }
 
-.mb-sm, .travel__img, .houses__title, .popular__title, .sub-title {
+.mb-sm,
+.travel__img,
+.houses__title,
+.popular__title,
+.sub-title {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .travel, .houses, .popular__btn {
+.mb-lg,
+.travel,
+.houses,
+.popular__btn {
   margin-bottom: 80px !important;
 }
 @media screen and (min-width: 960px) {
-  .mb-lg, .travel, .houses, .popular__btn {
+  .mb-lg,
+  .travel,
+  .houses,
+  .popular__btn {
     margin-bottom: 150px !important;
   }
 }
 
-.pb-sm, .travel__texts {
+.pb-sm,
+.travel__texts {
   padding-bottom: 16px !important;
 }
 
-.pb-lg, .hero {
+.pb-lg,
+.hero {
   padding-bottom: 80px !important;
 }
 @media screen and (min-width: 960px) {
-  .pb-lg, .hero {
+  .pb-lg,
+  .hero {
     padding-bottom: 150px !important;
   }
 }
 
-.content-width, .header__inner, .travel, .houses, .popular__header, .popular__container, .footer {
+.content-width,
+.header__inner,
+.travel,
+.houses,
+.popular__header,
+.popular__container,
+.footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.flex, .header__nav, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+.flex,
+.header__nav,
+.travel__inner,
+.houses__inner,
+.popular__container,
+.footer__nav,
+.footer__ul {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 600px) {
-  .flex, .header__nav, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+  .flex,
+  .header__nav,
+  .travel__inner,
+  .houses__inner,
+  .popular__container,
+  .footer__nav,
+  .footer__ul {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -700,38 +740,46 @@ img {
   color: #904669;
 }
 
-.font-sm, .sub-title {
+.font-sm,
+.sub-title {
   font-size: 14px;
 }
 @media screen and (min-width: 960px) {
-  .font-sm, .sub-title {
+  .font-sm,
+  .sub-title {
     font-size: 16px;
   }
 }
 
-.font-md, .popular__title {
+.font-md,
+.popular__title {
   font-size: 17px;
 }
 @media screen and (min-width: 960px) {
-  .font-md, .popular__title {
+  .font-md,
+  .popular__title {
     font-size: 19px;
   }
 }
 
-.font-lr, .houses__title {
+.font-lr,
+.houses__title {
   font-size: 17px;
 }
 @media screen and (min-width: 960px) {
-  .font-lr, .houses__title {
+  .font-lr,
+  .houses__title {
     font-size: 23px;
   }
 }
 
-.font-lg, .main-title {
+.font-lg,
+.main-title {
   font-size: 25px;
 }
 @media screen and (min-width: 960px) {
-  .font-lg, .main-title {
+  .font-lg,
+  .main-title {
     font-size: 36px;
   }
 }
@@ -750,7 +798,9 @@ img {
   position: relative;
   z-index: 10;
   background: white;
-  transition: transform 0.5s, box-shadow 0.5s;
+  transition:
+    transform 0.5s,
+    box-shadow 0.5s;
 }
 
 #main-content {
@@ -863,7 +913,7 @@ main {
   z-index: -1;
   opacity: 1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -977,7 +1027,7 @@ main {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .popular__btn {
   text-align: center;
@@ -1090,4 +1140,4 @@ main {
 }
 .icon.fb::before {
   background-image: url(../images/facebook.svg);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

@@ -46,41 +46,41 @@
 }
 
 .content-width {
-    width: 90%;
-    margin: 0 auto;
-    max-width: $contentMaxWidth;
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @include mq(md) {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  @include mq(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .mb-sm {
-    margin-bottom: 16px !important;
+  margin-bottom: 16px !important;
 }
 
 .mb-lg {
-    margin-bottom: 80px !important;
+  margin-bottom: 80px !important;
 
-    @include mq(lg) {
-        margin-bottom: 150px !important;
-    }
+  @include mq(lg) {
+    margin-bottom: 150px !important;
+  }
 }
 
 .pb-sm {
-    padding-bottom: 16px !important;
+  padding-bottom: 16px !important;
 }
 
 .pb-lg {
-    padding-bottom: 80px !important;
+  padding-bottom: 80px !important;
 
-    @include mq(lg) {
-        padding-bottom: 150px !important;
-    }
+  @include mq(lg) {
+    padding-bottom: 150px !important;
+  }
 }

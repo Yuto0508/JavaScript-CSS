@@ -1,6 +1,5 @@
 @use "../globals" as *;
 
-
 $cMenuClose: $cBlack;
 $cMenuOpen: $cBlack;
 
@@ -57,7 +56,9 @@ $cMenuOpen: $cBlack;
     display: block;
     transform: translate3d(0, 0, -1000px);
     padding: 0 40px;
-    transition: transform 0.3s, opacity 0.2s;
+    transition:
+      transform 0.3s,
+      opacity 0.2s;
     opacity: 0;
   }
   &__link {
